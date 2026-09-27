@@ -46,10 +46,6 @@
  
   <header>
 
-    <!-- <div class="pop">
-      <button></button>
-    </div> -->
-
     <div class="header-inner">
       <a href="#top" class="brand">
         <span class="brand-text">
@@ -67,6 +63,213 @@
       </nav>
     </div>
   </header>
+
+ <!-- =========================
+     PENTA MINDS RESEARCH COUNCIL
+     WEBSITE MAINTENANCE MODE
+     Replace existing maintenance block
+========================= -->
+
+<div id="pm-maintenance" role="status" aria-live="polite">
+
+  <style>
+    #pm-maintenance {
+      position: fixed;
+      inset: 0;
+      z-index: 999999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      box-sizing: border-box;
+      background: #0D2145;
+      color: #ffffff;
+      font-family: inherit;
+      text-align: center;
+    }
+
+    #pm-maintenance .pm-maintenance-box {
+      width: min(100%, 760px);
+      margin: 0 auto;
+    }
+
+    #pm-maintenance .pm-mark {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #pm-maintenance .pm-mark svg {
+      width: 64px;
+      height: 64px;
+    }
+
+    #pm-maintenance .pm-eyebrow {
+      margin: 0 0 12px;
+      color: #E87722;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    #pm-maintenance h1 {
+      margin: 0;
+      color: #ffffff;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+
+    #pm-maintenance h1 span {
+      color: #E87722;
+    }
+
+    #pm-maintenance .pm-divider {
+      width: 64px;
+      height: 3px;
+      margin: 22px auto 24px;
+      background: #E87722;
+      border-radius: 999px;
+    }
+
+    #pm-maintenance .pm-message {
+      max-width: 650px;
+      margin: 0 auto;
+      color: #d7dde7;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    #pm-maintenance .pm-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 28px;
+      padding: 9px 15px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.045);
+      color: #cbd3df;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    #pm-maintenance .pm-status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #E87722;
+      flex-shrink: 0;
+      animation: pm-pulse 2s ease-in-out infinite;
+    }
+
+    #pm-maintenance .pm-footer {
+      margin-top: 30px;
+      color: #FFFFFF;
+      font-size: 0.78rem;
+      line-height: 1.6;
+    }
+
+    #pm-maintenance .pm-footer strong {
+      color: #b9c2cf;
+      font-weight: 600;
+    }
+
+    @keyframes pm-pulse {
+      0%, 100% {
+        opacity: 0.45;
+        transform: scale(0.9);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #pm-maintenance .pm-status-dot {
+        animation: none;
+      }
+    }
+  </style>
+
+  <div class="pm-maintenance-box">
+
+    <div class="pm-mark" aria-hidden="true">
+      <svg viewBox="0 0 64 64" fill="none"
+           xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M32 7L36.8 10.1L42.4 9.5L45.4 14.3L50.5 16.2L50.2 21.9L53.5 26.5L50.4 31.1L50.5 36.8L45.4 38.8L42.4 43.6L36.8 43L32 46.1L27.2 43L21.6 43.6L18.6 38.8L13.5 36.8L13.8 31.1L10.5 26.5L13.6 21.9L13.5 16.2L18.6 14.3L21.6 9.5L27.2 10.1L32 7Z"
+          stroke="#E87722"
+          stroke-width="2.5"
+        />
+        <circle cx="32" cy="26" r="7" stroke="#FFFFFF" stroke-width="2.5"/>
+        <path
+          d="M22 38C24.6 33.8 28.2 32 32 32C35.8 32 39.4 33.8 42 38"
+          stroke="#FFFFFF"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+      </svg>
+    </div>
+
+    <span class="pm-eyebrow"><h3>Penta Minds Research Council </h3></span>
+
+    <h1>
+      Website
+      <span>Under Maintenance</span>
+    </h1>
+
+    <div class="pm-divider"></div>
+
+    <p class="pm-message">
+      The PMRC digital platform is currently undergoing scheduled
+      maintenance and infrastructure updates. We are refining the
+      research ecosystem, institutional resources, and digital systems
+      that support the Council's ongoing work.
+      <br><br>
+      The platform will be restored as updates are completed. <br>
+      Thank you for your patience and continued interest in Penta Minds
+      Research Council.
+    </p>
+
+    <div class="pm-status">
+      <span class="pm-status-dot"></span>
+      Institutional systems update in progress
+    </div>
+
+    <div class="pm-footer">
+      <h2>Penta Minds Research Council (PMRC)</h2><br>
+      Research · Governance · Education · Responsibility
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  document.documentElement.style.overflow = 'hidden';
+
+  window.addEventListener('load', function () {
+    document.body.querySelectorAll(
+      ':scope > *:not(#pm-maintenance)'
+    ).forEach(function (element) {
+      element.style.display = 'none';
+    });
+  });
+</script>
+
+<!-- =========================
+     END PMRC MAINTENANCE MODE
+========================= -->
+
  
   <main id="top">
     <section class="hero">
